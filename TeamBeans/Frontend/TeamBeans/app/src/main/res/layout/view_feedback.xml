@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/colorSecondary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.132"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/numOverall"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/colorRosybrown"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/overall_ratingBar"
+            app:layout_constraintTop_toTopOf="@+id/overall_ratingBar" />
+
+        <TextView
+            android:id="@+id/overall_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/overall"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/rating"
+            app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+        <RatingBar
+            android:id="@+id/overall_ratingBar"
+            style="@android:style/Widget.DeviceDefault.RatingBar"
+            android:layout_width="237dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:stepSize="0.1"
+            app:layout_constraintStart_toStartOf="@+id/overall_rating"
+            app:layout_constraintTop_toBottomOf="@+id/overall_rating" />
+
+        <TextView
+            android:id="@+id/teamwork_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/teamwork"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/overall_ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/overall_ratingBar" />
+
+        <TextView
+            android:id="@+id/numTeamwork"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/colorRosybrown"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/numOverall"
+            app:layout_constraintTop_toTopOf="@+id/teamwork_ratingBar" />
+
+        <RatingBar
+            android:id="@+id/teamwork_ratingBar"
+            style="@android:style/Widget.DeviceDefault.RatingBar"
+            android:layout_width="237dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:stepSize="0.1"
+            app:layout_constraintStart_toStartOf="@+id/teamwork_rating"
+            app:layout_constraintTop_toBottomOf="@+id/teamwork_rating" />
+
+        <TextView
+            android:id="@+id/communication_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/communication"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/teamwork_ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/teamwork_ratingBar" />
+
+        <TextView
+            android:id="@+id/numCommunication"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorRosybrown"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/numTeamwork"
+            app:layout_constraintTop_toTopOf="@+id/communication_ratingBar" />
+
+        <RatingBar
+            android:id="@+id/communication_ratingBar"
+            style="@android:style/Widget.DeviceDefault.RatingBar"
+            android:layout_width="237dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:stepSize="0.1"
+            app:layout_constraintStart_toStartOf="@+id/communication_rating"
+            app:layout_constraintTop_toBottomOf="@+id/communication_rating" />
+
+        <TextView
+            android:id="@+id/workquality_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/work_quality"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/communication_ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/communication_ratingBar" />
+
+        <TextView
+            android:id="@+id/numWorkQuality"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/colorRosybrown"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/numCommunication"
+            app:layout_constraintTop_toTopOf="@+id/workquality_ratingBar" />
+
+        <RatingBar
+            android:id="@+id/workquality_ratingBar"
+            style="@android:style/Widget.DeviceDefault.RatingBar"
+            android:layout_width="237dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:stepSize="0.1"
+            app:layout_constraintStart_toStartOf="@+id/workquality_rating"
+            app:layout_constraintTop_toBottomOf="@+id/workquality_rating" />
+
+        <TextView
+            android:id="@+id/attitude_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/attitude"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/workquality_ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/workquality_ratingBar" />
+
+        <TextView
+            android:id="@+id/numAttitude"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/colorRosybrown"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/numWorkQuality"
+            app:layout_constraintTop_toTopOf="@+id/attitude_ratingBar" />
+
+        <RatingBar
+            android:id="@+id/attitude_ratingBar"
+            style="@android:style/Widget.DeviceDefault.RatingBar"
+            android:layout_width="237dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:stepSize="0.1"
+            app:layout_constraintStart_toStartOf="@+id/attitude_rating"
+            app:layout_constraintTop_toBottomOf="@+id/attitude_rating" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/back"
+            android:textColor="@color/colorBurlywood"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/attitude_ratingBar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="searchResults">
+    </array>
+    <array name="langResults">
+        <item>Java</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>PHP</item>
+    </array>
+    <array name="ClassResults">
+        <item>COMS 309</item>
+        <item>COMS 311</item>
+        <item>COMS 319</item>
+    </array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "colorPrimaryDark">#352208</color>
+    <color name = "colorPrimary">#806443</color>
+    <color name = "colorSecondary">#842F0F</color>
+    <color name = "colorAccent">#D0A32B</color>
+    <color name = "colorWhite">#FFFFFF</color>
+    <color name = "colorBurlywood">#DEB887</color>
+    <color name = "colorBlack">#000000</color>
+    <color name = "colorCornsilk">#FFF8DC</color>
+    <color name = "colorFloralwhite">#FFFAF0</color>
+    <color name = "colorSeashell">#FFF5EE</color>
+    <color name = "colorRosybrown">#BC8F8F</color>
+</resources>

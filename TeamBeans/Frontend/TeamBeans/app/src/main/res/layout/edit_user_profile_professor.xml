@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePicture"
+            style="bold"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/default_user_avatar"
+            app:civ_border_color="@color/colorBlack"
+            app:civ_border_width="0.5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:hint="@string/username"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+
+        <Button
+            android:id="@+id/changePictureBtn"
+            android:layout_width="185dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/change_profile_picture"
+            android:textColor="@color/colorBurlywood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+        <EditText
+            android:id="@+id/description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/custom_button"
+            android:hint="@string/description"
+            android:maxLength = "200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/changePictureBtn" />
+
+        <TextView
+            android:id="@+id/classTeaching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/class_teaching"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description2" />
+
+        <Button
+            android:id="@+id/addclassTeachingBtn"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/add_symbol"
+            android:textColor="@color/colorBurlywood"
+            app:layout_constraintEnd_toStartOf="@+id/deleteclassTeachingBtn"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/class_teach"
+            app:layout_constraintTop_toTopOf="@+id/class_teach" />
+
+        <Button
+            android:id="@+id/deleteclassTeachingBtn"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/delete_symbol"
+            android:textColor="@color/colorBurlywood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/addclassTeachingBtn" />
+
+        <Spinner
+            android:id="@+id/class_teach"
+            android:layout_width="236dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/classTeaching"
+            app:layout_constraintTop_toBottomOf="@+id/classTeaching" />
+
+        <TextView
+            android:id="@+id/showclassTeachingInDatabase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:hint="@string/class_teaching"
+            android:textColor="@color/colorRosybrown"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/classTeaching"
+            app:layout_constraintTop_toBottomOf="@+id/class_teach" />
+
+        <TextView
+            android:id="@+id/showClassTeaching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:hint="@string/add_delete_class"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/classTeaching"
+            app:layout_constraintTop_toBottomOf="@+id/showclassTeachingInDatabase" />
+        <Button
+            android:id="@+id/saveProfileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/save"
+            android:textColor="@color/colorBurlywood"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/showclassTeachingInDatabase"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

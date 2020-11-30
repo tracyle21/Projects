@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">TeamBeans</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="this_is_login">Login</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="submit">Submit</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="welcome_to_team_beans">Welcome to Team Beans!</string>
+    <string name="welcome_to_team_beans2">Search for Teammates!</string>
+    <string name="team_beans">Team Beans</string>
+    <string name="password">Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="cancel">Cancel</string>
+    <string name="description">Description</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save">Save</string>
+    <string name="change_profile_picture">Change Profile Picture</string>
+    <string name="current_class">Current Class</string>
+    <string name="class_taken">Class Taken</string>
+    <string name="programming_languages">Programming Languages</string>
+    <string name="add">add</string>
+    <string name="dialog_message" />
+    <string name="add_symbol">+</string>
+    <string name="delete">-</string>
+    <string name="delete_symbol">-</string>
+    <string name="add_delete_class">Add/Delete class</string>
+    <string name="add_delete_language">Add/Delete Language</string>
+    <string name="search_hint">Search Users</string>
+    <string name="class_assist">Class Assisting</string>
+    <string name="class_teaching">Class Teaching</string>
+    <string name="add_feedback">Add Feedback</string>
+    <string name="view_feedback">View Feedback</string>
+    <string name="rating">Ratings</string>
+    <string name="Class">Class</string>
+    <string name="Name">Name</string>
+    <string name="hintNameRater">If anonymous leave it blank</string>
+    <string name="selected_class">Selected Class</string>
+    <string name="attitude">Attitude</string>
+    <string name="work_quality">Work Quality</string>
+    <string name="communication">Communication</string>
+    <string name="teamwork">Teamwork</string>
+    <string name="overall">Overall</string>
+    <string name="back">back</string>
+
+</resources>
