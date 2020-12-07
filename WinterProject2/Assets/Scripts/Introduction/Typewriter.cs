@@ -40,10 +40,13 @@ public class Typewriter : MonoBehaviour
 
     IEnumerator PlayIntroduction()
     {
-        string part1 = "This is the introduction";
-        string part2 = "This will talk about the basics of the game";
-        string part3 = "Once the intro is over, the user can press a button to continue on to the menu screen";
-        string[] intro = { part1, part2, part3 };
+
+        string part1 = "You are a student in your senior year of university, and you have come home to your childhood room to clean up before you leave" +
+        	" for your first job..";
+        string part2 = "You come across an old smartphone in a tattered box... When did you have a phone like this?";
+        string part3 = "You try turning it on, and it surprisingly works!";
+        string part4 = "What memories and secrets are on this old phone?";
+        string[] intro = { part1, part2, part3, part4 };
 
         for(int i = 0; i < intro.Length; i++)
         {
@@ -59,7 +62,9 @@ public class Typewriter : MonoBehaviour
         }
         yield return new WaitForSeconds(1f);
         startButton.gameObject.SetActive(true);
-        Debug.Log("End of Introduction");
+        PlayerPrefs.SetInt("DayProgress", 0);
+        PlayerPrefs.Save();
+        Debug.Log(PlayerPrefs.GetInt("DayProgress"));
     }
 
     private IEnumerator FadeMusic()

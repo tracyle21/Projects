@@ -56,15 +56,15 @@
     <Compile Include="Assets/Scripts/Fader.cs" />
     <Compile Include="Assets/Scripts/Introduction/Typewriter.cs" />
     <Compile Include="Assets/Scripts/MenuClick.cs" />
+    <Compile Include="Assets/Scripts/StoryLineWriter.cs" />
     <Compile Include="Assets/Scripts/Date.cs" />
     <Compile Include="Assets/Scripts/Introduction/Navigation.cs" />
     <Compile Include="Assets/Scripts/Initiate.cs" />
+    <Compile Include="Assets/Scripts/Day1/Notifications.cs" />
     <Compile Include="Assets/Scripts/Music/KeepMusic.cs" />
     <Compile Include="Assets/Scripts/Clock.cs" />
     <Compile Include="Assets/Scripts/MenuToSettings.cs" />
     <Compile Include="Assets/Scripts/Day1/AppNavigation.cs" />
-    <Compile Include="Assets/Scripts/Day1/Notifications.cs" />
-    <Compile Include="Assets/Scripts/StoryLineWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

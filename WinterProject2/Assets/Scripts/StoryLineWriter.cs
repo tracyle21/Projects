@@ -15,7 +15,11 @@ public class StoryLineWriter : MonoBehaviour
     {
         bgBox = gameObject.GetComponentInParent<Image>();
         bgBox.transform.localPosition = new Vector3(0, 2500, 0);
-        StartCoroutine(PlayStory());
+        if(PlayerPrefs.GetInt("DayProgress") != 1)
+        {
+            StartCoroutine(PlayStory());
+        }
+
        
     }
 
@@ -49,6 +53,8 @@ public class StoryLineWriter : MonoBehaviour
         }
         yield return new WaitForSeconds(1f);
         bgBox.transform.localPosition = new Vector3(1125, 0, 0);
+        PlayerPrefs.SetInt("DayProgress", 1);
+        PlayerPrefs.Save();
     }
 
 

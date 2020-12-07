@@ -4,10 +4,10 @@
     <Files>
       <File FileName="Assets/Scripts/MenuClick.cs" Line="42" Column="27" />
       <File FileName="Assets/Scripts/MenuToSettings.cs" Line="39" Column="23" />
-      <File FileName="Assets/Scripts/Introduction/Typewriter.cs" Line="28" Column="12" />
+      <File FileName="Assets/Scripts/Introduction/Typewriter.cs" Line="65" Column="46" />
       <File FileName="Assets/Scripts/Introduction/Navigation.cs" Line="23" Column="6" />
       <File FileName="Assets/Scripts/Day1/AppNavigation.cs" Line="23" Column="6" />
-      <File FileName="Assets/Scripts/StoryLineWriter.cs" Line="30" Column="27" />
+      <File FileName="Assets/Scripts/StoryLineWriter.cs" Line="20" Column="41" />
       <File FileName="Assets/Scripts/Day1/Notifications.cs" Line="33" Column="64" />
       <File FileName="Assets/Scripts/Initiate.cs" Line="1" Column="1" />
     </Files>
