@@ -11,3 +11,5 @@ Winter Project -> A small, personal project to get more aquainted with C# as wel
 Solitaire -> A group project with two members to create the game of Solitaire, has a GUI interface as well :) [written in: C/C#]
 
 Linux Terminal -> [to be uploaded]
+
+Machine Learning, Data Mining Project for VT Industries -> [to be uploaded]
